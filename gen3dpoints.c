@@ -52,3 +52,23 @@ int main() {
 }
 */
 //test
+#include<stdio.h>
+#include<stdlib.h>
+
+int main()
+{
+    printf("x coordinates\n");
+   int counter; //counter variable
+
+   //displaying random numbers between 1 and 6
+   for( counter = 1; counter <= 100; ++counter )
+   {
+      printf("%5d", ( rand() % 100 ));
+
+      //for displaying value in new line
+      if (counter % 25 == 0)
+      puts("");
+   }
+   return 0;
+   
+}
