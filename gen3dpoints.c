@@ -59,23 +59,34 @@ int main()
 {
     printf("x coordinates\n");
    int counterx,countery,counterz; //counter variable
-   
    //displaying random numbers between 1 and 6
-   for( counterx = 1,countery=1,counterz=1; counterx <= 100,countery<=100,counterz<=100; ++counterx,++countery,++counterz )
+   for( counterx = 1; counterx <= 100; ++counterx )
    {
-      printf("x");
+      //printf("x");
       printf("%5d", ( rand() % 100 ));
-      printf("y");
-      printf("%5d",(rand()%100));
-      printf("z");
-      printf("%5d",(rand()%100));
+      //printf("y");
+      //printf("%5d",(rand()%100));
+      //printf("z");
+      //printf("%5d",(rand()%100));
 
       //for displaying value in new line
-      if (counterx,countery,counterz % 25 == 0)
+      if (counterx % 25 == 0)
       puts("");
    }
    printf("y coordinates\n");
-   
+   for (countery=1;countery<=100;++countery)
+   {
+     printf("%5d",(rand() %100));
+     if (countery%25==0)
+     puts("");
+   }
+   printf("z coordinates\n");
+   for (counterz=1;counterz<=100;++counterz)
+   {
+     printf("%5d",(rand() %100));
+     if (counterz%25==0)
+     puts("");
+   }
    return 0;
    
 }
