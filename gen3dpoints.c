@@ -56,14 +56,18 @@ int main() {
 #include<stdlib.h>
 
 int main()
+
 {
     printf("x coordinates\n");
+   int x[101],xx;
    int counterx,countery,counterz; //counter variable
    //displaying random numbers between 1 and 6
    for( counterx = 1; counterx <= 100; ++counterx )
    {
       //printf("x");
-      printf("%5d", ( rand() % 100 ));
+      xx= (rand()%100);
+      printf("%5d", xx);
+      //xx=x[counterx];
       //printf("y");
       //printf("%5d",(rand()%100));
       //printf("z");
@@ -73,6 +77,9 @@ int main()
       if (counterx % 25 == 0)
       puts("");
    }
+   printf("%d\n",counterx);
+   printf("%d\n",xx);
+
    printf("y coordinates\n");
    for (countery=1;countery<=100;++countery)
    {
