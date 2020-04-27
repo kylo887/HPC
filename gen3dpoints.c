@@ -65,8 +65,8 @@ int main()
    for( counterx = 1; counterx <= 100; ++counterx )
    {
       //printf("x");
-      xx= (rand()%100);
-      printf("%5d", xx);
+      x[counterx]= (rand()%100);
+      printf("%5d", x[counterx]);
       //xx=x[counterx];
       //printf("y");
       //printf("%5d",(rand()%100));
@@ -78,22 +78,28 @@ int main()
       puts("");
    }
    printf("%d\n",counterx);
-   printf("%d\n",xx);
+   printf("%d\n",x[2]);
 
    printf("y coordinates\n");
+   int y[101];
    for (countery=1;countery<=100;++countery)
    {
-     printf("%5d",(rand() %100));
+     y[countery]=(rand()%100);
+     printf("%5d",y[countery]);
      if (countery%25==0)
      puts("");
    }
+   printf("%d\n",y[2]);
    printf("z coordinates\n");
+   int z[101];
    for (counterz=1;counterz<=100;++counterz)
    {
-     printf("%5d",(rand() %100));
+     z[counterz]=(rand()%100);
+     printf("%5d",z[counterz]);
      if (counterz%25==0)
      puts("");
    }
+   printf("%d\n",z[2]);
    return 0;
    
 }
