@@ -52,32 +52,25 @@ int main() {
 }
 */
 //test
+
 #include<stdio.h>
 #include<stdlib.h>
 
 int main()
-
+//int plot()
 {
-    printf("x coordinates\n");
-   int x[101],xx;
+  printf("x coordinates\n");
+   int x[101];
    int counterx,countery,counterz; //counter variable
-   //displaying random numbers between 1 and 6
    for( counterx = 1; counterx <= 100; ++counterx )
    {
-      //printf("x");
       x[counterx]= (rand()%100);
       printf("%5d", x[counterx]);
-      //xx=x[counterx];
-      //printf("y");
-      //printf("%5d",(rand()%100));
-      //printf("z");
-      //printf("%5d",(rand()%100));
-
       //for displaying value in new line
       if (counterx % 25 == 0)
       puts("");
    }
-   printf("%d\n",counterx);
+   //printf("%d\n",counterx);
    printf("%d\n",x[2]);
 
    printf("y coordinates\n");
@@ -90,6 +83,8 @@ int main()
      puts("");
    }
    printf("%d\n",y[2]);
+   printf("8 days later, comment this later\n");
+
    printf("z coordinates\n");
    int z[101];
    for (counterz=1;counterz<=100;++counterz)
@@ -100,6 +95,7 @@ int main()
      puts("");
    }
    printf("%d\n",z[2]);
+   //system("gnuplot -p name.gp")
    return 0;
    
 }
