@@ -84,6 +84,7 @@ int main()
    }
    printf("%d\n",y[2]);
    printf("8 days later, comment this later\n");
+   printf("blah blah blah\n");
 
    printf("z coordinates\n");
    int z[101];
