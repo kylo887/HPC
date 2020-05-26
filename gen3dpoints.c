@@ -81,7 +81,7 @@ int main()
       //for displaying value in new line
       if (counterx % 25 == 0)
       puts("");
-      
+      fputs("\n",fp);
    }
    
    fputs("\n",fp);
@@ -98,7 +98,7 @@ int main()
      fprintf(fp,"%5d",y[countery]);
      if (countery%25==0)
      puts("");
-     
+     fputs("\n",fp);
    }
    fputs("\n",fp);
    printf("%d\n",y[2]);
@@ -115,7 +115,7 @@ int main()
      fprintf(fp,"%5d",z[counterz]);
      if (counterz%25==0)
      puts("");
-     //fputs("",fp);
+     fputs("\n",fp);
    }
    printf("%d\n",z[2]);
    fclose(fp);
