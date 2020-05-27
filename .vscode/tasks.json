@@ -4,7 +4,7 @@
         {
             "type": "shell",
             "label": "gcc build active file",
-            "command": "C:\\MinGW\\bin\\gcc.exe",
+            "command": "C:\\MinGW\\bin\\gcc.exe", 
             "args": [
                 "-g",
                 "${file}",
@@ -34,6 +34,28 @@
             ],
             "options": {
                 "cwd": "C:\\MinGW\\bin"
+            }
+        },
+        {
+            "type": "shell",
+            "label": "gcc build active file mysys(mpi)",
+            "command": "C:\\msys64\\mingw64\\bin\\gcc.exe", 
+            "args": [
+                "${file}",
+                "-lmsmpi",
+                
+                "-o",
+                "${fileDirname}\\${fileBasenameNoExtension}"
+            ],
+            "options": {
+                "cwd": "C:\\msys64\\mingw64\\bin"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
             }
         }
     ]
