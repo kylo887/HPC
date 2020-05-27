@@ -119,6 +119,7 @@ int main()
    }
    printf("%d\n",z[2]);
    fclose(fp);
+   system("gnuplot -p file.gp");
    return 0;
    
 }
