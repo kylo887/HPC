@@ -4,7 +4,7 @@
         {
             "type": "shell",
             "label": "gcc build active file",
-            "command": "C:\\MinGW\\bin\\gcc.exe", 
+            "command": "C:\\MinGW\\bin\\gcc.exe",
             "args": [
                 "-g",
                 "${file}",
@@ -39,13 +39,51 @@
         {
             "type": "shell",
             "label": "gcc build active file mysys(mpi)",
-            "command": "C:\\msys64\\mingw64\\bin\\gcc.exe", 
+            "command": "C:\\msys64\\mingw64\\bin\\gcc.exe",
             "args": [
                 "${file}",
                 "-lmsmpi",
-                
                 "-o",
-                "${fileDirname}\\${fileBasenameNoExtension}"
+                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+            ],
+            "options": {
+                "cwd": "C:\\msys64\\mingw64\\bin"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "type": "shell",
+            "label": "C/C++: gcc.exe build active file",
+            "command": "C:\\MinGW\\bin\\gcc.exe",
+            "args": [
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build"
+        },
+        {
+            "type": "shell",
+            "label": "gcc build active file mysys(openmp)",
+            "command": "C:\\msys64\\mingw64\\bin\\gcc.exe",
+            "args": [
+                "${file}",
+                "-fopenmp",
+                "-o",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe"
             ],
             "options": {
                 "cwd": "C:\\msys64\\mingw64\\bin"
