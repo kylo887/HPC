@@ -229,6 +229,6 @@ int main(int argc, char **argv)
             printf("Np=%d,Total time= %f,dt=%f \n",Np,total_time,dt);
         	printf("run time = %f \n",elapsedt);
  	}
-
+   system("gnuplot -p file.gp");
    MPI_Finalize();
 }

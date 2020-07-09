@@ -1,1 +1,0 @@
-splot "test.txt" u 1:2:3 
